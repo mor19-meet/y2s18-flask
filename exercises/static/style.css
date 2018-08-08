@@ -4,3 +4,42 @@ body{
 	background-color: AntiqueWhite ;
 	color:BlueViolet ;
 }
+.alive{
+	background-color: black;
+	color:AntiqueWhite;
+	top:20px;
+	left: 60px;
+	position: absolute;
+	width: 550px;
+	text-align: center;
+
+	}
+
+.para{
+	position: absolute;
+	top :16%;
+	width: 400px;
+}
+
+.players{
+	position: absolute;
+	top: 60%;
+	right: 5%;
+	width: 600px;
+}
+
+/*.picture{
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	width: 120px;
+	height: 50px;
+}*/
+
+ul{
+	font-size:20;
+}
+
+h2{
+	color:black;
+}

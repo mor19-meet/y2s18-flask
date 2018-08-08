@@ -2,14 +2,37 @@
 <html>
 	<head>
 		<title>favorit sport</title>
+
+ 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 	</head>
 
 	<body>
-		<h1>my favorit sprot is volleyball</h1>
-		<h3>Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules.[1] It has been a part of the official program of the Summer Olympic Games since 1964.</h3>
+		<div class="alive">
+			<h1>my favorit sprot is volleyball</h1>
+		</div>
 
-		<h3>The ball is usually played with the hands or arms, but players can legally strike or push (short contact) the ball with any part of the body.</h3>
+		<div class = "para"><h4>Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules.[1] It has been a part of the official program of the Summer Olympic Games since 1964.</h4>
 
- 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<h4>The ball is usually played with the hands or arms, but players can legally strike or push (short contact) the ball with any part of the body.</h4>
+		</div>
+
+ 		<div class = "players"><h2>some players:</h2>
+ 		<ul>
+			{% for player in players %}
+            <li> {{player}} </li>
+                {% endfor %}
+        </ul>
+
+         {% if likes_same_sport == True %}
+            	<p> YAYYYY we like the same sportssss!!!! </p>
+            {% else %}
+                <p>ohh nooo we dont like te same sport:(</p>
+            {% endif %}
+        </div>
+
+<!--         <div class = "picture">
+        	<img src="./static/picture.jpg">
+        </div> -->
+
 </body>
 </html>
